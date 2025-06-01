@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Token ZetaChain → Pitch Lucy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">Projeto Token ZetaChain → Pitch Lucy</h1>
+                <p class="header__subtitle">Guia completo para criar e submeter seu Universal Token</p>
+                <div class="progress-overview">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">0% Completo</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="passo-a-passo">Passo a Passo</button>
+                <button class="tab" data-tab="codigo">Código</button>
+                <button class="tab" data-tab="deploy">Deploy</button>
+                <button class="tab" data-tab="pitch-lucy">Pitch Lucy</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Tab 1: Passo a Passo -->
+            <div class="tab-content active" id="passo-a-passo">
+                <div class="steps-grid">
+                    <div class="step-card" data-step="1">
+                        <div class="step-header">
+                            <div class="step-number">
+                                <span class="step-icon">⚙️</span>
+                                <span class="step-status" id="status-1">⏳</span>
+                            </div>
+                            <div class="step-info">
+                                <h3>Configurar Ambiente</h3>
+                                <p>Instalar dependências e configurar projeto ZetaChain</p>
+                            </div>
+                            <button class="step-toggle" data-step="1">
+                                <span>▼</span>
+                            </button>
+                        </div>
+                        <div class="step-content">
+                            <ul class="task-list">
+                                <li>Instalar Node.js 18+</li>
+                                <li>Instalar Yarn</li>
+                                <li>Configurar wallet</li>
+                                <li>Obter tokens testnet</li>
+                            </ul>
+                            <button class="btn btn--primary complete-step" data-step="1">
+                                Marcar como Completo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="step-card" data-step="2">
+                        <div class="step-header">
+                            <div class="step-number">
+                                <span class="step-icon">📝</span>
+                                <span class="step-status" id="status-2">⏳</span>
+                            </div>
+                            <div class="step-info">
+                                <h3>Criar Contrato</h3>
+                                <p>Desenvolver contrato Universal Token básico</p>
+                            </div>
+                            <button class="step-toggle" data-step="2">
+                                <span>▼</span>
+                            </button>
+                        </div>
+                        <div class="step-content">
+                            <ul class="task-list">
+                                <li>Criar MeuTokenBasico.sol</li>
+                                <li>Herdar UniversalToken</li>
+                                <li>Configurar parâmetros</li>
+                            </ul>
+                            <button class="btn btn--primary complete-step" data-step="2">
+                                Marcar como Completo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="step-card" data-step="3">
+                        <div class="step-header">
+                            <div class="step-number">
+                                <span class="step-icon">🧪</span>
+                                <span class="step-status" id="status-3">⏳</span>
+                            </div>
+                            <div class="step-info">
+                                <h3>Deploy Local</h3>
+                                <p>Testar deployment no ambiente local</p>
+                            </div>
+                            <button class="step-toggle" data-step="3">
+                                <span>▼</span>
+                            </button>
+                        </div>
+                        <div class="step-content">
+                            <ul class="task-list">
+                                <li>Iniciar localnet</li>
+                                <li>Compilar contratos</li>
+                                <li>Deploy e inicializar</li>
+                                <li>Testar funcionalidades</li>
+                            </ul>
+                            <button class="btn btn--primary complete-step" data-step="3">
+                                Marcar como Completo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="step-card" data-step="4">
+                        <div class="step-header">
+                            <div class="step-number">
+                                <span class="step-icon">🚀</span>
+                                <span class="step-status" id="status-4">⏳</span>
+                            </div>
+                            <div class="step-info">
+                                <h3>Deploy Testnet</h3>
+                                <p>Fazer deployment na testnet da ZetaChain</p>
+                            </div>
+                            <button class="step-toggle" data-step="4">
+                                <span>▼</span>
+                            </button>
+                        </div>
+                        <div class="step-content">
+                            <ul class="task-list">
+                                <li>Obter ZETA testnet</li>
+                                <li>Deploy na Athens testnet</li>
+                                <li>Verificar contrato</li>
+                                <li>Mintar tokens iniciais</li>
+                            </ul>
+                            <button class="btn btn--primary complete-step" data-step="4">
+                                Marcar como Completo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="step-card" data-step="5">
+                        <div class="step-header">
+                            <div class="step-number">
+                                <span class="step-icon">🎯</span>
+                                <span class="step-status" id="status-5">⏳</span>
+                            </div>
+                            <div class="step-info">
+                                <h3>Submeter para Pitch Lucy</h3>
+                                <p>Enviar token para avaliação da Lucy AI</p>
+                            </div>
+                            <button class="step-toggle" data-step="5">
+                                <span>▼</span>
+                            </button>
+                        </div>
+                        <div class="step-content">
+                            <ul class="task-list">
+                                <li>Acessar pitchlucy.ai</li>
+                                <li>Conectar wallet</li>
+                                <li>Escrever pitch convincente</li>
+                                <li>Submeter e aguardar</li>
+                            </ul>
+                            <button class="btn btn--primary complete-step" data-step="5">
+                                Marcar como Completo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Código -->
+            <div class="tab-content" id="codigo">
+                <div class="code-section">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3>MeuTokenBasico.sol</h3>
+                            <button class="btn btn--outline copy-code" data-target="contract-code">
+                                Copiar Código
+                            </button>
+                        </div>
+                        <div class="card__body">
+                            <pre class="code-block" id="contract-code">// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+
+import "@zetachain/standard-contracts/contracts/token/contracts/zetachain/UniversalToken.sol";
+
+/**
+ * @title MeuTokenBasico
+ * @dev Implementação mais simples possível de um Universal Token na ZetaChain
+ * Este token pode ser transferido nativamente entre chains conectadas
+ */
+contract MeuTokenBasico is UniversalToken {
+    // O contrato herda toda a funcionalidade do UniversalToken
+    // Não precisa de implementação adicional para funcionalidade básica
+}</pre>
+                        </div>
+                    </div>
+
+                    <div class="explanation-grid">
+                        <div class="card">
+                            <div class="card__body">
+                                <h4>🔗 UniversalToken</h4>
+                                <p>Herda todas as funcionalidades necessárias para transferências cross-chain nativas. Não requer implementação de bridges ou wrapping.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__body">
+                                <h4>⚡ Simplicidade</h4>
+                                <p>Uma das implementações mais simples possíveis - o protocolo ZetaChain cuida de toda a complexidade cross-chain.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commands-section">
+                        <h3>Comandos de Deploy</h3>
+                        <div class="command-list">
+                            <div class="command-item">
+                                <code>npx zetachain@latest new --project meu-token-basico</code>
+                                <button class="copy-btn" data-text="npx zetachain@latest new --project meu-token-basico">📋</button>
+                            </div>
+                            <div class="command-item">
+                                <code>cd meu-token-basico && yarn</code>
+                                <button class="copy-btn" data-text="cd meu-token-basico && yarn">📋</button>
+                            </div>
+                            <div class="command-item">
+                                <code>yarn zetachain localnet start</code>
+                                <button class="copy-btn" data-text="yarn zetachain localnet start">📋</button>
+                            </div>
+                            <div class="command-item">
+                                <code>npx hardhat compile --force</code>
+                                <button class="copy-btn" data-text="npx hardhat compile --force">📋</button>
+                            </div>
+                            <div class="command-item">
+                                <code>npx hardhat deploy --network localhost --gateway 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707</code>
+                                <button class="copy-btn" data-text="npx hardhat deploy --network localhost --gateway 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707">📋</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resources-section">
+                        <h3>Recursos Úteis</h3>
+                        <div class="resource-links">
+                            <a href="https://www.zetachain.com/docs/" target="_blank" class="btn btn--outline">
+                                📚 ZetaChain Docs
+                            </a>
+                            <a href="https://labs.zetachain.com/get-zeta" target="_blank" class="btn btn--outline">
+                                💧 Faucet Testnet
+                            </a>
+                            <a href="https://zetachain-athens.blockscout.com/" target="_blank" class="btn btn--outline">
+                                🔍 Explorer Athens
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Deploy -->
+            <div class="tab-content" id="deploy">
+                <div class="deploy-section">
+                    <div class="deploy-config">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Configuração do Token</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="form-group">
+                                    <label class="form-label" for="token-name">Nome do Token</label>
+                                    <input type="text" class="form-control" id="token-name" placeholder="Meu Token Básico" value="Meu Token Básico">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="token-symbol">Símbolo</label>
+                                    <input type="text" class="form-control" id="token-symbol" placeholder="MTB" value="MTB">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="token-supply">Supply Inicial</label>
+                                    <input type="number" class="form-control" id="token-supply" placeholder="1000000" value="1000000">
+                                </div>
+                                <button class="btn btn--primary btn--full-width" id="deploy-btn">
+                                    🚀 Deploy Contrato
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="deploy-status">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Status do Deploy</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="status-list" id="deploy-status-list">
+                                    <div class="status-item pending">
+                                        <span class="status-icon">⏳</span>
+                                        <span>Aguardando configuração...</span>
+                                    </div>
+                                </div>
+                                <div class="contract-address" id="contract-address" style="display: none;">
+                                    <h4>Contrato Deployado:</h4>
+                                    <div class="address-display">
+                                        <code id="contract-address-text"></code>
+                                        <button class="copy-btn" id="copy-address">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Pitch Lucy -->
+            <div class="tab-content" id="pitch-lucy">
+                <div class="pitch-section">
+                    <div class="pitch-editor">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Escreva seu Pitch</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="form-group">
+                                    <label class="form-label" for="pitch-text">Pitch para Lucy AI</label>
+                                    <textarea class="form-control" id="pitch-text" rows="8" placeholder="Escreva seu pitch aqui..."></textarea>
+                                </div>
+                                <div class="pitch-actions">
+                                    <button class="btn btn--outline" id="load-example">
+                                        📝 Carregar Exemplo
+                                    </button>
+                                    <button class="btn btn--primary" id="submit-pitch">
+                                        🎯 Enviar para Lucy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pitch-example">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Exemplo de Pitch Bem-Sucedido</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="example-content">
+                                    <p><strong>Lucy, apresento o MTB (Meu Token Básico)</strong> - um token construído na arquitetura Universal da ZetaChain.</p>
+                                    
+                                    <p><strong>🔗 Vantagens Técnicas:</strong></p>
+                                    <ul>
+                                        <li>Interoperabilidade nativa entre Bitcoin, Ethereum e BNB Chain</li>
+                                        <li>Sem necessidade de pontes tradicionais ou wrapping</li>
+                                        <li>Transferências cross-chain automáticas via protocolo ZetaChain</li>
+                                    </ul>
+
+                                    <p><strong>💡 Proposta de Valor:</strong></p>
+                                    <ul>
+                                        <li>Simplicidade: uma interface unificada para múltiplas blockchains</li>
+                                        <li>Eficiência: menores custos de transação cross-chain</li>
+                                        <li>Segurança: validado pela rede ZetaChain com proof-of-stake</li>
+                                    </ul>
+
+                                    <p><strong>📊 Potencial de Mercado:</strong><br>
+                                    O MTB representa a próxima evolução em tokens universais, eliminando a fragmentação atual do ecossistema cripto. Com a ZetaChain conectando as maiores blockchains nativamente, o MTB oferece acesso fluido a bilhões em liquidez distribuída.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lucy-response" id="lucy-response" style="display: none;">
+                        <div class="card">
+                            <div class="card__header">
+                                <h3>Resposta da Lucy AI</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="response-content" id="response-content">
+                                    <!-- Response will be inserted here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

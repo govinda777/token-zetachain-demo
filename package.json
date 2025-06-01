@@ -1,0 +1,45 @@
+{
+  "name": "meu-token-basico-zetachain",
+  "version": "1.0.0",
+  "description": "Projeto mais básico possível para criar token na ZetaChain e enviar para Pitch Lucy",
+  "scripts": {
+    "compile": "npx hardhat compile --force",
+    "deploy:localnet": "npx hardhat deploy --network localhost --gateway 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+    "deploy:testnet": "npx hardhat deploy --network zeta_testnet --gateway 0x6c533f7fe93fae114d0954697069df33c9b74fd7",
+    "localnet:start": "npx zetachain@latest localnet start",
+    "test": "npx hardhat test",
+    "lint": "eslint . --ext .ts,.js",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "@openzeppelin/contracts-upgradeable": "^5.1.0",
+    "@types/node": "^20.0.0",
+    "@zetachain/protocol-contracts": "12.0.0",
+    "@zetachain/standard-contracts": "1.0.0-rc2",
+    "@zetachain/toolkit": "13.0.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^6.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.1.0",
+    "hardhat": "^2.22.15"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seuusername/meu-token-basico-zetachain"
+  },
+  "keywords": [
+    "zetachain",
+    "universal-token",
+    "cross-chain",
+    "defi",
+    "pitch-lucy",
+    "blockchain"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT"
+}
